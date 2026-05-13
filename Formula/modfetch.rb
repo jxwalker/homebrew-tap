@@ -3,20 +3,20 @@ class Modfetch < Formula
   homepage "https://github.com/jxwalker/modfetch"
   license "MIT"
 
-  release = "v0.7.1"
+  release = "v0.8.0"
 
   if OS.mac?
     url "https://github.com/jxwalker/modfetch/releases/download/#{release}/modfetch_darwin_universal",
         using: :nounzip
-    sha256 "a73944d38cb17ded5b78fa9de11ac3ba3922e934ebcc809c160c6cb82428449e"
+    sha256 "947f728f2c1708d67719673ec41364a212cf88a21eb7b980e3e3a11395141fde"
   elsif Hardware::CPU.arm?
     url "https://github.com/jxwalker/modfetch/releases/download/#{release}/modfetch_linux_arm64",
         using: :nounzip
-    sha256 "893e51802932381bc14d472d94002813c491c5170f14e50573e0b30cf873c868"
+    sha256 "063f70619266d9a89ebf9178f412a50ae757977f9615d1fb8c3faa2e6771e150"
   else
     url "https://github.com/jxwalker/modfetch/releases/download/#{release}/modfetch_linux_amd64",
         using: :nounzip
-    sha256 "c7db15650986c32cf4b1550699e624a929e21b926194a2523896fbacec95276c"
+    sha256 "a7bbfb6ce482b91ab1a93eb3b3aa9618b1e61b943e078bf84befc0e3114c5e2a"
   end
 
   def install
